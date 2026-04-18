@@ -52,6 +52,7 @@
   },
   "scripts": {
     "build": "tsgo && bunx tsx ./scripts/check-autumn-config.ts && vite build",
+    "vercel-build": "bun run build",
     "cf-typegen": "wrangler types",
     "check": "tsgo && vite build && wrangler deploy --dry-run",
     "dev": "vite",
